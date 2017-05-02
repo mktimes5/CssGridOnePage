@@ -1,0 +1,9 @@
+# Ignore DStore
+.DS_Store
+._*
+
+# Ignore Sass Cache
+.sass-cache/
+*.css.map
+.sass-cache*
+.sass-cache/*

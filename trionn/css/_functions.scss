@@ -1,0 +1,22 @@
+@mixin slide-out {
+	background-color: #181A1F;
+	color: #f7f7f7;
+	padding: 10px 20px;
+	display: inline-block;
+	animation-name: slide-out;
+	animation-duration: .4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+	@keyframes slide-out {
+		from {
+			margin-left: 0;
+			margin-top: 0;
+		}
+
+		to {
+			margin-left: 50%;
+			margin-top:-20px;
+		}
+	}
+}
