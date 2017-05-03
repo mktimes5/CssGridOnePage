@@ -1,104 +1,11 @@
 * {
   font-family: Ubuntu Mono; }
 
-body {
-  font-family: Ubuntu Mono;
-  font-size: 16px;
-  margin: 0; }
-
-section {
-  display: inline-block;
-  width: 100%;
-  padding-top: 25px;
-  padding-bottom: 25px; }
-
-.strip {
-  background-color: #CECBD8; }
-
-.mid {
-  width: 75%;
-  margin: 0 auto; }
-
-button {
-  border-radius: 0;
-  border: none;
-  font-size: 16px;
-  padding: 8px 15px;
-  color: #fefefe;
-  background-color: #0778BA; }
-
-/* always present */
-.foo-transition {
-  transition: all 1s;
-  height: 50px;
-  padding: 10px;
-  background-color: #eee;
-  overflow: hidden; }
-
-/* .expand-enter defines the starting state for entering */
-/* .expand-leave defines the ending state for leaving */
-.foo-enter, .foo-leave {
-  height: 0;
-  padding: 0 10px;
-  opacity: 0;
-  background-color: #111; }
-
-#sweet {
-  background-color: #FF00E5;
-  border-radius: 5px;
-  padding: 5px 10px;
-  display: block;
-  text-align: center;
-  color: #fefefe; }
-
-.getbig {
-  padding: 20px 40px !important; }
-
-#sweet-menu {
-  list-style-type: none;
-  width: 50%;
-  display: inline-block; }
-  #sweet-menu li {
-    width: 50%;
-    display: inline-block;
-    margin: 5px 0;
-    padding: 10px;
-    height: 10px;
-    transition: all 0.5s;
-    clear: both; }
-    #sweet-menu li:before {
-      width: 50px;
-      height: 25px;
-      content: "   ";
-      display: block;
-      text-align: center; }
-    #sweet-menu li a.totalSweetLink {
-      display: block !important;
-      background-color: #181A1F;
-      color: #f7f7f7;
-      padding: 10px 20px;
-      display: inline-block;
-      animation-name: slide-out;
-      animation-duration: .4s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-      text-align: center;
-      width: 100px; }
-@keyframes slide-out {
-  from {
-    margin-left: 0;
-    margin-top: 0; }
-  to {
-    margin-left: 50%;
-    margin-top: -20px; } }
-    #sweet-menu li a {
-      display: none; }
-  #sweet-menu li:first-child:before {
-    width: 50px;
-    height: 25px;
-    background-color: #d4c2ff;
-    content: " 0 ";
-    display: block;
-    text-align: center; }
+#main-grid {
+  display: grid;
+  grid-template-columns: 12% repeat(8, 1fr) 12%;
+  grid-template-rows: repeat(5, 20vh);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px; }
 
 /*# sourceMappingURL=style.css.map */

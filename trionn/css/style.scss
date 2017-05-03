@@ -5,6 +5,14 @@
 	font-family: Ubuntu Mono;
 }
 
+#main-grid {
+	display:grid;
+	grid-template-columns: 12% repeat(8, 1fr) 12%;
+	grid-template-rows: repeat(5, 20vh);
+	grid-column-gap: 10px;
+  	grid-row-gap: 15px;
+}
+
 
 
 
